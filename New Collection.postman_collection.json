@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "439437ff-1f98-4ba5-aafb-3b450fd917eb",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42659318"
+	},
+	"item": [
+		{
+			"name": "http://localhost:6969/vulnerabilities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"SQL Injection\",\r\n  \"code\": \"SQLI-001\",\r\n  \"severity\": \"High\",\r\n  \"description\": \"SQL Injection vulnerability allows attackers to execute arbitrary SQL commands.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6969/vulnerabilities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"vulnerabilities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6969/vulnerabilities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/vulnerabilities/bdd11d63-6316-4176-a321-06a7c0c4e341",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"vulnerabilities",
+						"bdd11d63-6316-4176-a321-06a7c0c4e341"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6969/vulnerabilities/bdd11d63-6316-4176-a321-06a7c0c4e341",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/vulnerabilities/bdd11d63-6316-4176-a321-06a7c0c4e341",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"vulnerabilities",
+						"bdd11d63-6316-4176-a321-06a7c0c4e341"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6969/vulnerabilities/bdd11d63-6316-4176-a321-06a7c0c4e341",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated SQL Injection\",\r\n  \"code\": \"SQLI-002\",\r\n  \"severity\": \"Critical\",\r\n  \"description\": \"Updated description of SQL Injection vulnerability.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6969/vulnerabilities/bdd11d63-6316-4176-a321-06a7c0c4e341",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"vulnerabilities",
+						"bdd11d63-6316-4176-a321-06a7c0c4e341"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6969/vulnerabilities/bdd11d63-6316-4176-a321-06a7c0c4e341",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/vulnerabilities/bdd11d63-6316-4176-a321-06a7c0c4e341",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"vulnerabilities",
+						"bdd11d63-6316-4176-a321-06a7c0c4e341"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
