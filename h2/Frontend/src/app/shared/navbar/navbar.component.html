@@ -1,0 +1,24 @@
+<div class="navbar">
+    <div class="navbar__logo">
+      <a routerLink="/home">
+        <img src="icons/logo-icon.png" alt="logo" class="navbar__logo-img" />
+      </a>
+    </div>
+    <div class="navbar__auth">
+      <a routerLink="/search-game">
+        <img src="icons/search-icon.png" alt="search" class="navbar__auth-img" />
+      </a>
+      <a *ngIf="isLoggedIn()" routerLink="/favorites">
+        <img src="icons/star-icon.png" alt="favorite" class="navbar__auth-img" />
+      </a>
+      <a *ngIf="!isLoggedIn()" routerLink="/login">
+        <img src="icons/login-icon.png" alt="login" class="navbar__auth-img" />
+      </a>
+      <a *ngIf="isLoggedIn()" routerLink="/account">
+        <img src="icons/account-icon.png" alt="account" class="navbar__auth-img" />
+      </a>
+      <a *ngIf="isLoggedIn()" (click)="logout()">
+        <img src="icons/logout-icon.png" alt="logout" class="navbar__auth-img logout-icon" />
+      </a>
+    </div>
+  </div>

@@ -1,0 +1,49 @@
+<div class="game-page" [ngStyle]="{ 'background-image': 'url(' + game.background_image + ')' }">
+  <div class="game-overlay">
+    <div class="game-container">
+      <div class="game-header">
+        <h1>
+          {{ game.name }}
+          <img *ngIf="userId"
+          [src]="isFavorite ? 'icons/star-icon.png' : 'icons/favorite-add-icon.png'"
+          [title]="isFavorite ? 'Șterge din favorite' : 'Adaugă la favorite'"
+          (click)="toggleFavorite()"
+          class="favorite-icon"
+          alt="Favorite" />     
+        </h1>
+        <p *ngIf="game.released"><strong>Released:</strong> {{ game.released }}</p>
+        <p *ngIf="game.rating"><strong>Rating:</strong> {{ game.rating }}/5</p>
+      </div>
+
+      <div class="game-details">
+        <div class="game-section">
+          <h3>Platforms</h3>
+          <ul>
+            <li *ngFor="let platform of game.platforms">{{ platform.platform.name }}</li>
+          </ul>
+        </div>
+
+        <div class="game-section">
+          <h3>Available on</h3>
+          <ul>
+            <li *ngFor="let store of game.stores">{{ store.store.name }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="game-tags">
+        <h3>Tags</h3>
+        <ul>
+          <li *ngFor="let tag of game.tags">{{ tag.name }}</li>
+        </ul>
+      </div>
+
+      <div class="game-trailer" *ngIf="trailerVideoId">
+        <h3>{{ trailerTitle }}</h3>
+        <iframe width="100%" height="400" [src]="'https://www.youtube.com/embed/' + trailerVideoId | safe"
+          frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>

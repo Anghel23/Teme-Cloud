@@ -1,0 +1,19 @@
+<div class="search-game-page" [ngStyle]="{ 'background-image': 'url(' + backgroundUrl + ')' }">
+    <div class="search-bar-wrapper">
+      <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        (keyup.enter)="searchGames()"
+        placeholder="Search..."
+        class="search-bar"
+      />
+    </div>
+  
+    <div class="games-grid" *ngIf="games.length > 0">
+      <div class="game-card" *ngFor="let game of games" (click)="navigateToGame(game.name)">
+        <img [src]="game.background_image" [alt]="game.name" />
+        <h3>{{ game.name }}</h3>
+      </div>
+    </div>
+  </div>
+  

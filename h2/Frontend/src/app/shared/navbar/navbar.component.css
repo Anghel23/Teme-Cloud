@@ -1,0 +1,40 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 80px;
+    padding: 0 20px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+
+.navbar__auth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__logo-img {
+    height: 100%;
+    max-height: 60px;
+    width: auto;
+}
+
+.navbar__auth-img {
+    height: 100%;
+    max-height: 45px;
+    width: auto;
+}
+
+.logout-icon:hover {
+    cursor: pointer;
+  }
+  

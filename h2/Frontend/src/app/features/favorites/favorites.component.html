@@ -1,0 +1,13 @@
+<div class="favorite-page" [ngStyle]="{ 'background-image': 'url(' + backgroundUrl + ')' }">
+  <div class="favorites-grid" *ngIf="favoriteGames.length > 0; else noFavorites">
+    <div class="favorite-card" *ngFor="let game of favoriteGames">
+      <img [src]="game.background_image" [alt]="game.name" />
+      <h3>{{ game.name }}</h3>
+      <button class="remove-button" (click)="removeFromFavorites(game.rawgId)">x</button>
+    </div>
+  </div>
+
+  <ng-template #noFavorites>
+    <p class="no-favorites-message">You have no favorite games yet.</p>
+  </ng-template>
+</div>

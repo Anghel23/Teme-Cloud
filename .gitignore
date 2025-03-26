@@ -1,0 +1,152 @@
+<<<<<<< Updated upstream
+## Build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## ASP.NET Core
+wwwroot/
+*.db
+*.db-shm
+*.db-wal
+
+## Entity Framework Migrations (optional: keep Migrations folder but not snapshots)
+**/Migrations/*Snapshot.cs
+**/Migrations/*Designer.cs
+**/Migrations/*.ModelSnapshot.cs
+
+## Logs
+*.log
+logs/
+
+## Configuration secrets (do NOT commit these)
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+## Rider
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+
+## VS / MonoDevelop
+.vs/
+TestResults/
+*.pidb
+*.userprefs
+
+## Dotnet tools
+.dotnet_tools/
+
+## Publish output
+publish/
+dist/
+=======
+## Build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## ASP.NET Core
+wwwroot/
+*.db
+*.db-shm
+*.db-wal
+
+## Entity Framework Migrations (optional: keep Migrations folder but not snapshots)
+**/Migrations/*Snapshot.cs
+**/Migrations/*Designer.cs
+**/Migrations/*.ModelSnapshot.cs
+
+## Logs
+*.log
+logs/
+
+## Configuration secrets (do NOT commit these)
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+## Rider
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+
+## VS / MonoDevelop
+.vs/
+TestResults/
+*.pidb
+*.userprefs
+
+## Dotnet tools
+.dotnet_tools/
+
+## Publish output
+publish/
+dist/
+>>>>>>> Stashed changes
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+out-tsc/
+coverage/
+
+# Angular build artifacts
+.angular/
+.angular-cache/
+
+# Compiled JavaScript
+*.js
+*.js.map
+
+# Compiled TypeScript
+*.tsbuildinfo
+
+# Local environment files
+.env
+.env.*.local
+.env.local
+
+# Editor configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package lock files (opțional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Test results
+test-results/
+
+appsettings.json
