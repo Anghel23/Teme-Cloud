@@ -148,5 +148,3 @@ pnpm-lock.yaml
 
 # Test results
 test-results/
-
-appsettings.json
